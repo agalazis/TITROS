@@ -1,0 +1,14 @@
+﻿/*Copyright: Andreas Galazis 2012
+-------------------------------------
+*Use Policy:
+*You have the right to use, modify and redistribute this script.
+*(provided that you won't modify or remove the Use Policy)
+*You do not have the right to sell it or use it for commercial projects
+------------------------------------- */
+/*use swallowmovement to make sure that the movement is only input to glovepie
+ and that the OS movement input will be only from glovepie*/
+   mouse.SwallowMovement=true
+//swap the inputs
+   mouse.DirectInputX = mouse.DirectInputX + Delta(mouse1.DirectInputY)
+   mouse.DirectInputY = mouse.DirectInputY - Delta(mouse1.DirectInputX)
+
